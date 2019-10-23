@@ -4,3 +4,11 @@
     background-color: #333336;
     color: wheat;
 }
+
+.Navbar img {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 50px;
+    max-height: 50px;
+}
