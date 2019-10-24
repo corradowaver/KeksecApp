@@ -1,0 +1,15 @@
+.InputForm {
+  background-color: #333336;
+  color: wheat;
+  width: 40vw;
+  height: 70vh;
+  border: none;
+  border-radius: 1vh;
+}
+
+.InputForm:focus {
+  outline: none !important;
+  -webkit-box-shadow: 0 0 5px #7289DA;
+          box-shadow: 0 0 5px #7289DA;
+}
+/*# sourceMappingURL=FormJS.css.map */

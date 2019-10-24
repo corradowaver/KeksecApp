@@ -1,8 +1,8 @@
 import React from "react";
-import "./Mainview.scss"
-import "./inputforms/FormJS"
-import FormJS from "./inputforms/FormJS";
-import FormTS from "./inputforms/FormTS";
+import "./Mainview.css"
+import "./forms/FormJS"
+import FormJS from "./forms/FormJS";
+import FormTS from "./forms/FormTS";
 
 const Mainview: React.FC = () => {
   return (

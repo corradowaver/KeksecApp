@@ -1,0 +1,20 @@
+$dscrd-color: #7289DA;
+$theme-color: #333336;
+
+.FormJS {
+
+}
+
+.InputForm {
+  background-color: $theme-color;
+  color: wheat;
+  width: 40vw;
+  height: 70vh;
+  border: none;
+  border-radius: 1vh;
+}
+
+.InputForm:focus {
+  outline: none !important;
+  box-shadow: 0 0 5px $dscrd-color;
+}

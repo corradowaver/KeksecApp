@@ -1,9 +1,12 @@
+$theme-color: #222226;
+$text-color: wheat;
+
 .Mainview {
   width: 100vw;
   height: 100vh;
-  background-color: #222226;
-  color: wheat;
-  font-size: 2vh;
+  background-color: $theme-color;
+  color: $text-color;
+  font-size: 1.7vh;
   align-content: center;
 }
 
