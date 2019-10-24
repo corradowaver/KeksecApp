@@ -1,14 +1,40 @@
+$navbar-color: #333336;
+$text-color: wheat;
+$dscrd-color: #7289DA;
+
 .Navbar {
     width: 75px;
     height: 100vh;
-    background-color: #333336;
-    color: wheat;
+    background-color: $navbar-color;
+    color: $text-color;
+
+    transform-origin: 50% 65%;
+    transition: transform 0.7s, filter 0.5s ease-in-out;
+    filter: brightness(100%);
 }
 
 .Navbar img {
-    display: flex;
-    flex-direction: column;
-
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
     max-width: 50px;
     max-height: 50px;
 }
+
+.Navbar:hover {
+    filter: brightness(130%);
+    transform: scale(1.3);
+}
+
+.Logos {
+    margin-top: 15vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ImageLink:hover img {
+    box-shadow: 0 0 5px $dscrd-color;
+  }

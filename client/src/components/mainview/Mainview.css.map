@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,SAAS,CAAC;EACR,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EANJ,OAAO;EAOnB,KAAK,EANM,KAAK;EAOhB,SAAS,EAAE,KAAK;EAChB,aAAa,EAAE,MAAM;CACtB;;AAED,AAAA,WAAW,CAAC;EACV,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,eAAe,EAAE,YAAY;EAC7B,UAAU,EAAE,IAAI;CACjB",
+    "sources": [
+        "Mainview.scss"
+    ],
+    "names": [],
+    "file": "Mainview.css"
+}
