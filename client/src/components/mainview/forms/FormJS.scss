@@ -1,5 +1,6 @@
 $dscrd-color: #7289DA;
 $theme-color: #333336;
+$text-color: #DDDDD6;
 
 .FormJS {
 
@@ -7,11 +8,12 @@ $theme-color: #333336;
 
 .InputForm {
   background-color: $theme-color;
-  color: wheat;
+  color: $text-color;
   width: 40vw;
   height: 70vh;
   border: none;
   border-radius: 1vh;
+  resize: none;
 }
 
 .InputForm:focus {

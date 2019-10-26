@@ -1,0 +1,15 @@
+.Compiler {
+  width: 80vw;
+  height: 16vh;
+  background-color: black;
+  text-align: left;
+  margin: auto;
+  margin-top: 2vh;
+}
+
+.Compiler strong {
+  color: #84B128;
+  margin-left: 1px;
+  margin-top: 1px;
+}
+/*# sourceMappingURL=Compiler.css.map */
