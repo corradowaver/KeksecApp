@@ -1,0 +1,16 @@
+$good-color: #84B128;
+
+.Compiler {
+  width: 80vw;
+  height: 16vh;
+  background-color: black;
+  text-align: left;
+  margin: auto;
+  margin-top: 2vh;
+}
+
+.Compiler strong {
+  color: $good-color;
+  margin-left: 1px;
+  margin-top: 1px;
+}
