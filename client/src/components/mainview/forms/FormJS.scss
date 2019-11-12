@@ -6,16 +6,6 @@ $text-color: #DDDDD6;
 
 }
 
-.InputForm {
-  background-color: $theme-color;
-  color: $text-color;
-  width: 40vw;
-  height: 70vh;
-  border: none;
-  border-radius: 1vh;
-  resize: none;
-}
-
 .InputForm:focus {
   outline: none !important;
   box-shadow: 0 0 5px $dscrd-color;

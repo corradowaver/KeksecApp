@@ -1,20 +1,32 @@
-import React from "react";
-import Prism from 'prismjs';
+import React, { useRef, useState } from "react";
+import Editor from '@monaco-editor/react';
 import "./FormTS.css"
-import "../../../prism.css"
 
-Prism.highlightAll();
+interface PassedProps extends React.Props<string> {
+  code: string
+}
 
-var code:string = 'console.log("kek")'
+const FormTS: React.FC<PassedProps> = (props: any) => {
+const [code, setCode] = useState<string>(props.code)
+const [isEditorReady, setIsEditorReady] = useState(false);
+const valueGetter = useRef();
 
-const FormTS: React.FC = () => {
+function handleEditorDidMount(_valueGetter: any) {
+  setIsEditorReady(true);
+  valueGetter.current = _valueGetter;
+}
+console.log(code, props.code)
   return (
    <div className="FormTS">
-      <pre>
-        <code className="language-javascript">
-          {code}
-        </code>
-      </pre>
+      <Editor
+        width="40vw"
+        height="70vh"
+        language="typescript"
+        theme="dark"
+        options={{readOnly: true}}
+        value={code}
+        editorDidMount={handleEditorDidMount}
+      />
     </div>
   );
 }

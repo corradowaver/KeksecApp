@@ -1,31 +1,19 @@
 import React from "react";
-import "./Mainview.css"
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "./forms/FormJS"
-import Button from 'react-bootstrap/Button';
+import "./forms/FormJS";
 import FormJS from "./forms/FormJS";
 import FormTS from "./forms/FormTS";
-// import Compiler from "./compileform/Compiler"
+import "./Mainview.css";
 
 const Mainview: React.FC = (props: any) => {
-  const [text] = React.useState<string>("")
-
-  function runCompilation(e: React.MouseEvent): void {
-    console.log(text)
-  }
-
+  const [JSCode, setJSCode] = React.useState<string>("default")
+  const [TSCode, setTSCode] = React.useState<string>("some code")
+  
   return (
     <div className="Mainview">
       <div className="InputForms">
-        <FormJS propToPass={text}/>
-        <FormTS/>
+        <FormJS/>
+        <FormTS code={TSCode}/>
       </div>
-      <Button className="CompileButton" variant="outline-danger" onClick={runCompilation}>
-        Compile
-      </Button>
-      {/* <div className="compilerForm">
-        <Compiler/>
-      </div> */}
     </div>
   );
 }
